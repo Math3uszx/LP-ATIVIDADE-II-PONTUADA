@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int primeiroNumero = 0;
+    int segundoNumero = 0;
+    int operacao;
+    int soma;
+    int subtracao;
+    
+    printf("Digite o primeiro número: \n");
+    scanf("%i",&primeiroNumero);
+    printf("Digite o segundo número: \n");
+    scanf("%i",&segundoNumero);
+    
+    printf("1) adição \n");
+    printf("2) subtração \n");
+    printf("Resposta: \n");
+    scanf("%i",&operacao);
+    
+    switch(operacao){
+        
+        case 1:
+        soma = primeiroNumero + segundoNumero;
+        printf("soma: %i \n",soma);
+        break;
+        
+        case 2:
+        subtracao = primeiroNumero - segundoNumero;
+        printf("subtração: %i \n",subtracao);
+        break;
+        
+        default:
+        printf("opção inválida");
+        break;
+    }
+    
+    return 0;
+}
