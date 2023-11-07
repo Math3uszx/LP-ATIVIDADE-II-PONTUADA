@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int temperatura = 0;
+    printf("informe qual é a temperatura:");
+    scanf("%i",&temperatura);
+    
+    if(temperatura < 15){
+        printf("clima chuvoso");
+    } else if(temperatura > 25){
+        printf("clima ensolarado");
+    } else if(temperatura >= 15 && temperatura <= 25){
+        printf("clima nublado");
+    }
+    return 0;
+}
