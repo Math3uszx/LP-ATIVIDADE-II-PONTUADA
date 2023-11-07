@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int jogo = 0;
+    
+ printf("\t ---Menu--- \n");
+ printf("1 - Novo jogo \n");
+ printf("2 - Carregar jogo \n");
+ printf("3 - configurações \n");
+ printf("Resposta:");
+ scanf("%i",&jogo);
+ 
+switch(jogo) {
+
+case 1: 
+ printf("Novo jogo\n");
+  break;
+case 2:
+ printf("Carregar jogo");
+  break;
+case 3:
+ printf("configurações");
+ break;
+ default:
+ printf(" opção inválida");
+ break;
+}
+    return 0;
+}
