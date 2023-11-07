@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+ 
+  int impar ;
+  int par = 0;
+  int numero = 0;
+  float mediapar = 0;
+  float mediaimpar = 0;
+  int somapar;
+  int somaimpar;
+  
+  do{
+      printf("digite um número:\n");
+      scanf("%i",&numero);
+     
+      
+    if(numero > 0){
+      if(numero % 2 == 0)
+      {
+          par++;
+      } else{
+          impar++;
+      }
+      
+      somapar = somapar = par;
+      somaimpar = somaimpar+ impar;
+    }
+  } while(numero > 0);
+      
+      mediapar = somapar / par;
+      mediaimpar = somaimpar / impar;
+    printf("Média par: %.1f \n",mediapar);
+    printf("Média impar: %.1f \n",mediaimpar);
+    return 0;
+}
