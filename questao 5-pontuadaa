@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int idioma = 0;
+    
+ printf("\t Escolha um idioma: \n");
+ printf("1 - inglês \n");
+ printf("2 - Espanhol \n");
+ printf("3 - Francês \n");
+ printf("Resposta:");
+ scanf("%i",&idioma);
+ 
+switch(idioma) {
+
+case 1: 
+ printf("Welcome \n");
+  break;
+case 2:
+ printf("Bienvenido");
+  break;
+case 3:
+ printf("Accueillir");
+ break;
+ default:
+ printf(" opção inválida");
+ break;
+}
+    return 0;
+}
