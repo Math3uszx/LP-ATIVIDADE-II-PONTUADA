@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int idade = 0;
+    
+  printf("Digite sua idade:")
+  scanf("%i",&idade);
+  
+  if(idade >= 18){
+      printf("Acesso permitido");
+  } else {
+      printf("Acesso negado");
+  }
+    return 0;
+}
