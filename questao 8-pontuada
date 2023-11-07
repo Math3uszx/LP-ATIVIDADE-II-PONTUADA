@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i = 0;
+    int numero;
+    int codigo;
+    
+   printf("\t ----PERSONALIZAÇÃO---- \n");
+   printf("1)cifrão \n");
+   printf("2)ponto \n");
+   printf("3)bolha \n");
+   printf("Escolha uma: \n");
+   scanf("%i",&codigo);
+   
+   system("cls || clear");
+   
+   switch(codigo) {
+       
+       case 1:
+        printf("Informe um número:");
+        scanf("%i",&numero);
+        
+        
+        for(i = numero;i >= 0;i--){
+            printf("%d$ \n",i);
+        }
+        break;
+        case 2:
+        printf("Digite um número:");
+        scanf("%i",&numero);
+        
+        for(i = numero;i >= 0;i--){
+            printf("%d.. \n",i);
+        }
+        break;
+        
+        case 3 :
+        printf("Digite um número:");
+        scanf("%i",&numero);
+    
+        for(i = numero;i >= 0;i--){
+            printf("%d° \n",i);
+        }
+    break;
+    
+    default : 
+    printf("opção inválida");
+    break;
+        
+        }
+  
+    return 0;
+}
