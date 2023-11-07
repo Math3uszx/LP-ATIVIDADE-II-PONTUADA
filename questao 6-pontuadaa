@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float Preco = 0;
+    int codigo = 0;
+ printf("\t Escolha a opção desejada \n");    
+ printf("1- camiseta \n");
+ printf("2- calça \n");
+ printf("3- sapato \n");
+ printf("Digite o código:");
+ scanf("%i",&codigo);
+    
+ switch(codigo){
+     
+     case 1:
+     Preco= 50.00;
+     printf("camiseta \n");
+     printf("Preço:R$ %.2f \n",Preco);
+      break;
+      
+      case 2:
+     Preco= 30.00;
+     printf("calça \n");
+     printf("Preço:R$ %.2f \n",Preco);
+      break;
+      
+      case 3:
+     Preco= 90.00;
+     printf("sapato \n");
+     printf("Preço:R$ %.2f \n",Preco);
+      break;
+      default :
+      printf("Opção inválida");
+      break;
+ }
+    return 0;
+}
